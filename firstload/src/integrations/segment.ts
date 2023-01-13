@@ -3,7 +3,7 @@ import type { HighlightPublicInterface } from '../../../client/src/types/types'
 interface SegmentContext {
 	payload: any
 	next: any
-	integrations: any
+	integrations?: any
 }
 
 const HighlightSegmentMiddleware = ({ next, payload }: SegmentContext) => {
